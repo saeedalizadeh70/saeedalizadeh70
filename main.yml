@@ -1,0 +1,7 @@
+- name: config Firewall
+  hosts: docker
+  tasks: 
+    - name: open port 80
+      ufw:
+       role: allow
+       port: 22
